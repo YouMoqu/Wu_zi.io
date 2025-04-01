@@ -1,31 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>我的简历</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .contact { margin: 20px 0; }
-        .section { margin-bottom: 30px; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>个人网站</title>
 </head>
-<body>
-    <h1>你的姓名</h1>
-    <div class="contact">
-        <p>📧 邮箱：your-email@example.com | 📱 电话：123-456-7890</p>
-    </div>
-    
-    <div class="section">
-        <h2>教育背景</h2>
-        <p><strong>XX大学</strong> - 计算机科学（2018-2022）</p>
-    </div>
-    
-    <div class="section">
-        <h2>工作经历</h2>
-        <p><strong>XX公司</strong> - 前端开发（2022-至今）</p>
-        <ul>
-            <li>负责公司官网开发，使用HTML/CSS/JavaScript</li>
-        </ul>
-    </div>
+
+<body class="bg-gray-100 font-sans">
+    <!-- 导航栏 -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold">我的网站</a>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-white hover:text-gray-200">主页</a></li>
+                <li><a href="#" class="text-white hover:text-gray-200">个人简历</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 个人简介 -->
+    <section class="container mx-auto py-16 px-4">
+        <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-16">
+            <div class="md:w-1/2">
+                <img src="https://picsum.photos/200/300" alt="个人照片"
+                    class="rounded-full mx-auto md:mx-0 shadow-lg">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">你好，我是[你的名字]</h1>
+                <p class="text-gray-600 mb-8">我是一名热爱编程的开发者，专注于前端开发和用户体验设计。我喜欢用代码创造出有趣的东西，并且不断学习新的技术。</p>
+                <a href="#" class="bg-blue-500 text-white py-3 px-6 rounded-full hover:bg-blue-600">了解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示 -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">我的技能</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md text-center">
+                    <i class="fa-brands fa-linux text-4xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Linux</h3>
+                    <p class="text-gray-600">熟练使用 Linux 操作系统，掌握常见命令和系统管理。</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md text-center">
+                    <i class="fa-brands fa-python text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Python</h3>
+                    <p class="text-gray-600">熟悉 Python 编程语言，能够进行数据分析和自动化脚本编写。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="container mx-auto py-16 px-4">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">联系方式</h2>
+        <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8 text-center">
+            <div>
+                <i class="fa-solid fa-envelope text-3xl text-blue-500 mb-2"></i>
+                <p class="text-gray-600">邮箱：example@example.com</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone text-3xl text-blue-500 mb-2"></i>
+                <p class="text-gray-600">电话：+123456789</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-github text-3xl text-blue-500 mb-2"></i>
+                <p class="text-gray-600">GitHub：<a href="#" class="text-blue-500 hover:underline">github.com/yourusername</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 py-8 text-center">
+        <p class="text-white">版权所有 &copy; 2025 [你的名字]</p>
+    </footer>
 </body>
+
 </html>
+    
